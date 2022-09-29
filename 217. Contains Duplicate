@@ -1,0 +1,12 @@
+/**
+ * Hash Set
+ * Time O(N) | Space O(N)
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+let containsDuplicate = (arr) => {
+    const UniqueSet = new Set(arr);/* Time O(N) | Space O(N) */
+    const isEqual = UniqueSet.size === arr.length;
+
+    return !isEqual;
+};
